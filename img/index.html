@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Delivery services | Online Food </title>
+     <!-- <link rel="stylesheet" href="style.css">  -->
+    <!-- <link rel="stylesheet"  media="screen and (max-width:1170px)"  href="css/phone.css">  -->
+    
+    <!-- <link rel="stylesheet" href="phone.css"> -->
+    <style>
+
+
+
+    /* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Fredoka One', cursive;
+    position:sticky;
+    top: 0pox;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+
+}
+
+/* Navigation bar: logo and image */
+#logo{
+   
+    margin: 10px 45px;
+
+}    
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar : List styling */
+
+#navbar{
+    position: relative;
+
+}
+
+#navbar ul{
+    display: flex;
+}
+
+
+
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 642px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#home::before{
+    content: "";
+    background: url('newbg1.jpg' ) no-repeat center/cover; 
+    position: absolute;
+    height: 701px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem ;
+    font-family: 'DM Serif Display', serif;
+    
+}
+#home h2{
+    color: white;
+    
+}
+#home span{
+    font-size: 45px;
+    color: rgb(225, 18, 18);
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5 rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+#home .btn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+
+}
+
+/* services center */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+
+
+#services .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 25px 5px;
+    border-radius: 28px;
+    background-color: rgba(230, 230, 231, 0.984);
+    margin-bottom: 21px;
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block; 
+
+}
+#services .box p{
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+
+}
+#services .box h1{
+    font-size: 34px;
+    color: black;
+    text-align: center;
+
+}
+#services .box .btn{
+    font-size: 23px;
+    color:white;
+    text-align: center;
+    margin-left: 45px;
+    background-color: green;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+#services .box .btn:hover{
+    color: white;
+    background-color: rgb(4, 91, 4);
+}
+
+
+/* clints section */
+#client-section{
+    
+    position: relative;
+
+
+
+}
+#client-section::before{
+    content: "";
+    position:absolute;
+    background: url('bg3.jpg');
+    width: 100%;
+    height: 97%;
+    z-index:-1;
+    opacity: 0.3;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.client-item{
+    padding:34px;
+}
+
+.client img{
+    padding: 124px;
+}
+
+    
+
+.client-item{
+    padding: 50px;
+}
+
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+    /* background: url('img/contact-us.jpg') no-repeat center/cover;  */
+}
+#contact::before{
+    content:"";
+    background: url('contact.jpg'); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+     
+}
+footer{
+    background: black;
+    color: white;
+    padding:9px 20px;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Fredoka One', cursive;
+}
+#contact-box .btn{
+    color: white;
+    background-color: green;
+    margin: 0px;
+}
+#contact-box .btn:hover{
+    background-color:rgb(41, 88, 41);
+    color: white;
+    border: 2px solid black;
+}
+
+
+
+
+
+/* utility class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'DM Serif Display', serif;
+
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+}
+.center{
+    text-align: center;
+}
+
+/* Phone css */
+
+@media (max-width:1170px)  {
+
+    /* Navigation */
+    #navbar{
+        flex-direction: column;
+
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+         padding: 0px 7px;
+         padding-bottom: 8px;
+
+    }
+
+   
+
+
+    /* home section */
+    #home{
+        height: 370px;
+        padding: 3px 28px;
+    }
+    #home::before {
+        height:380px;
+    }
+
+    #home p{
+        font-size: 13px;
+        
+    }
+
+
+
+    
+
+     /*Services section */
+        #services{
+            flex-direction: column;
+        }
+
+        #services .box{
+            padding: 14px;
+            margin: 2px 0px;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        /* client section */
+        #clients{
+            flex-wrap: wrap;
+        }
+
+        #clients img{
+            width: 66px;
+            padding: 2px 6px;
+            height: auto;
+        }
+
+
+
+        /* contact us section */
+            #contact-box{
+                font: 80%;
+            }
+
+
+
+        /* footer */
+
+
+
+
+         /* utility classes */
+    .h-primary{
+        font-size: 26px;
+    }
+
+    .btn{
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    
+}
+   
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="mOOdy foDie">
+        </div>
+
+        <ul>
+             <li class="item"><a href="#Home" >Home</a></li>
+             <li class="item"><a href="#services-container">services</a></li>
+             <li class="item"><a href="#client-section">Our clients</a></li>
+             <li class="item"><a href="#contact-box">Contact Us</a></li>
+             
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="primary">Welcome to <span>mOOdy foDie</span></h1>
+        <h2>The Online Restaurent </h2>
+       <p>
+        Hungry for some good food ? Get ready to dig in with the best food in the city.
+       </p>
+       
+       <button class="btn">Order Now</button>
+    </section>
+    
+    <section id="services-container">
+        <h1 class="h-primary center">Our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="biryani.jpg" alt="chicken">
+                <h2 class="h-secondary center">Chicken Biryani</h2>
+                <p class="center">Biryani is not just a food🍖
+                    It’s a love for many…..</p>
+                    <p>Buy the best biryani only  at </p>
+                    <h1>200/rs</h1>
+                    <button class="btn">Order Now</button>
+
+                   
+
+            </div>
+            <div class="box">
+                <img src="photo1.jpg" alt="chicken">
+                <h2 class="h-secondary center">Chicken Tandoor</h2>
+                <p class="center">You can never say NO to chicken.</p>
+                <p>Buy the best Chicken Tandoor Only at </p>
+                <h1>200/rs</h1>
+                <button class="btn">Order Now</button>
+                
+
+            </div>
+
+            <div class="box">
+                <img src="curry.jpg" alt="chicken">
+                <h2 class="h-secondary center">Chicken Curry</h2>
+                <p class="center">Enjoy the best Chicken Curry Only at</p>
+                <h1>200/rs</h1>
+                <button class="btn">Order Now</button>
+               
+
+            </div>
+            <div class="box">
+                <img src="fried-chicken.jpg" alt="chicken">
+                <h2 class="h-secondary center">Fried Chicken</h2>
+                <p class="center">It’s never wrong to have a fried chicken moment</p>
+                <h1>200/rs</h1>
+                <button class="btn">Order Now</button>
+                
+
+            </div>
+        </div>
+    </section>
+    <hr>
+        <section id="client-section">
+            <h1 class="h-primary center">Our clints</h1>
+            <div id="clients">
+                <div class="client-item">
+                    <img src="swiggynew.png" width="225px" height="225px"  alt="Swiggy">
+                </div>
+                <div class="client-item">
+                    <img src="zomatologo.jpg " width="225px" height="225px"  alt="Zomato">
+                </div>
+                <div class="client-item">
+                    <img src="Uber-Eats-logo.jpg" width="225px" height="225px" alt="ubereats">
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </section>
+
+    <section class="contact">
+        
+        <h1 class="h-primary center">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="email" name="name" id="Email" placeholder="Enter your Email">
+
+                </div>
+                <div class="form-group">
+                    <label for="Contact Number">Contact Number</label>
+                    <input type="number" name="Number" id="name" placeholder="Enter your Contact Number">
+
+                </div>
+                <div class="form-group">
+                    <label for="name">Message</label>
+                   <textarea name="Message" id="Message " cols="30" rows="10"></textarea>
+
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.onlinemeal.com. All rights Reserved!
+        </div>
+    </footer>
+    
+</body>
+</html> 
